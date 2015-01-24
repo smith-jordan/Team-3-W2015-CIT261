@@ -7,7 +7,7 @@
 
 <p id="demo"></p>
 
-<script>
+<script type="text/javascript">
 var person = {
     firstName : "John",
     lastName  : "Doe",
