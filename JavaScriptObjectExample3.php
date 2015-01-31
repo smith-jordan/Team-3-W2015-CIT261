@@ -2,7 +2,7 @@
 <html>
 <head>
 <!--This is my sandbox code-->
-<title>DOM Manipulation</title>
+<title>JavaScript Objects and DOM Manipulation</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript">
@@ -17,7 +17,7 @@
 }
 var IDcity = new City("Pocatello", "Blackfoot", "Shelley", "Idaho Falls", "Rigby", "Rexburg");
 
-document.write("When driving from Salt Lake you will pass " + IDcity.cityA + ", " + IDcity.cityB + ", " + IDcity.cityC + ", " + IDcity.cityD + " and " + IDcity.cityE + " on your way to " + eIDcity.cityF + ".");
+document.write("When driving from Salt Lake you will pass " + IDcity.cityA + ", " + IDcity.cityB + ", " + IDcity.cityC + ", " + IDcity.cityD + " and " + IDcity.cityE + " on your way to " + IDcity.cityF + ".");
 
 
 window.onload = function(){
