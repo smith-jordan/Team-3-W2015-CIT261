@@ -15,7 +15,7 @@ var person = {
     eyeColor  : "blue"
 };
 
-document.write(person.firstName+ " " + person.lastName + " is " +person.age + " years old and has" + person.eyeColor + " eyes.");
+document.write(person.firstName+ " " + person.lastName + " is " +person.age + " years old and has " + person.eyeColor + " eyes.");
 
 </script>
 
