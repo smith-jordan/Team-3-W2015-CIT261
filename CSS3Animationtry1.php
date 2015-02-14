@@ -96,10 +96,11 @@ div:hover {
 <p class="rubberBand" style="font-size: 2em; font-family: Ariel; color: darkblue;">Hello, this is a rubberband animation example.</p>
 
  
-<img class="rubberBand" src="http://twbcatering.com/attachments/apps/514934b51c83bb54260000dc/entries/514934b51c83bb54260000dd/fields/image/attachments/13637521180636_twb_catering_long_logo.814x287.2_0_1997_704.jpg" alt="Mountain View"style="width:25%" >
+<img class="rubberBand" src="http://www.mountainprofessor.com/images/Mountain-Ranges-Colorado-2.jpg" style="width: 60%" >
  
 <div style="font-size: 2em; font-family: Ariel; color: darkblue;">Example of a CSS3 transition.</div>
 
 <div></div>
  
 </body>
+</html>
