@@ -1,0 +1,213 @@
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans);
+
+body {
+    margin:0px;
+    padding:0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Alegreya Sans', Arial, sans-serif;
+    padding:0px;
+    margin:0px;
+}
+.button {
+    display: block;
+    padding:5px;
+    font-size:11pt;
+    width:50px;
+    font-family:'Alegreya Sans', Arial, sans-serif;
+    text-decoration: none;
+    color:#ffffff;
+    text-align:center;
+    background-color:#232323;
+    /*Gradient*/
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.2));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.2));
+}
+.button:active {
+  /*Gradient*/
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.4));
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.4));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.4));
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.4));
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.4));
+}
+
+/*Header*/
+header {
+    color:#ffffff;
+    background-color:#000000;
+    position:fixed;
+    top:0px;
+    height:50px;
+    width:100%;
+}
+header h1 {
+    text-align: center;
+    margin-top:5px;
+}
+#home {
+    position:fixed;
+    top:10px;
+    left:5px;
+    z-index:1;
+    width:50px;
+}
+
+/*Main content*/
+main{
+    margin-top:50px;
+}
+
+/*popup menus*/
+.popup h2 {
+    font-size:14pt;
+    padding:10px;
+}
+.popup h3 {
+    font-size: 12pt;
+    padding:3px;
+}
+.popup ul {
+    padding:0px;
+    margin:0px;
+}
+.close {
+    position:absolute;
+    top:2px;
+    right:2px;
+    z-index:1;
+    width:25px;
+    font-size:8pt;
+}
+
+/*Add item menu*/
+#additemdiv {
+    height:100px;
+    width:100%;
+    position:fixed;
+    bottom:40px;
+    background-color:#000000;
+    color:#ffffff;
+}
+#additemdiv #quantity {
+    float:left;
+}
+#additemdiv a.button {
+    float:left;
+}
+
+/*delete item menu*/
+#dltitemdiv {
+   height:100px;
+    width:100%;
+    position:fixed;
+    bottom:40px;
+    background-color:#000000;
+    color:#ffffff; 
+}
+#dltitem {
+    float:left;
+}
+#dltitemdiv a.button {
+    float:left;
+}
+#clearbutt {
+    clear:both;
+    width:100px;
+}
+
+/*Options menu*/
+#divoptions {
+    height:200px;
+    width:100%;
+    position:fixed;
+    bottom:40px;
+    background-color:#000000;
+    color:#ffffff;
+}
+#divoptions ul {
+    margin-left:20px;
+    margin-bottom:10px;
+}
+#optcolors{
+    list-style-type:none;
+}
+#optcolors li{
+    float:left;
+    margin:2px;
+}
+.optcolors {
+    display:block;
+    height:20px;
+    width:20px;
+    
+}
+#pink{
+    background-color:pink;
+    border: 1px solid white
+}
+#red {
+    background-color:red;
+    border: 1px solid white
+}
+#orange {
+    background-color:orange;
+    border: 1px solid white
+}
+#yellow {
+    background-color:yellow;
+    border: 1px solid white
+}
+#green {
+    background-color:green;
+    border: 1px solid white
+}
+#blue {
+    background-color:blue;
+    border: 1px solid white
+}
+#purple {
+    background-color: purple;
+    border: 1px solid white
+}
+#black {
+    background-color:black;
+    border: 1px solid white
+}
+/*footer navigation*/
+footer {
+   color:#ffffff;
+   background-color:#000000; 
+   position:fixed;
+   bottom:0px;
+   height:40px;
+   width:100%;
+}
+footer ul {
+    list-style-type: none;
+    margin:0px;
+    padding:5px;
+    width:100%;
+}
+footer li{
+    width:56px;
+    padding:5px;
+    text-align:center;
+}
+footer #add {
+    float:left;
+}
+footer #options{
+    float:left;
+    position:absolute;
+    left:50%;
+    margin-left:-33px;
+}
+footer #delete {
+    float:left;
+    position:absolute;
+    right:5px;
+}
