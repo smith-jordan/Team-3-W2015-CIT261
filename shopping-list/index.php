@@ -16,7 +16,7 @@
     </head>
     <body>
         <header class="themecolor" id="header">
-            <h1>Shopping List</h1>
+            <h1 class="animated rubberBand">Shopping List</h1>
         </header>
         <main>
             <table>
