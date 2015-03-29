@@ -4,17 +4,8 @@
         <title>Shopping List</title>
         <link href="stylesheet.css" type="text/css" rel="stylesheet" />
         
-        <script>
-            function testFunction(){
-                document.getElementById("header").css("background-color", "pink");
-            }
-            
-            function changeColor(color){
-                document.getElementByClass("themecolor").css("background-color", color);
-            }        
-        </script>
     </head>
-    <body>
+    <body onload="loadColor()">
         <header class="themecolor" id="header">
             <h1 class="animated rubberBand">Shopping List</h1>
         </header>
@@ -42,9 +33,9 @@
         <footer class="themecolor">
             <nav>
                 <ul>
-                    <li id="add"><a href="add-list">Add</a></li>
-                    <li id="options"><a href="options">Options</a></li>
-                    <li id="delete"><a href="delete-list">Delete</a></li>
+                    <li id="add"><a href="add-list" class="button">Add</a></li>
+                    <li id="options"><a href="options" class="button">Options</a></li>
+                    <li id="delete"><a href="delete-list" class="button">Delete</a></li>
                 </ul>
             </nav>
         </footer>

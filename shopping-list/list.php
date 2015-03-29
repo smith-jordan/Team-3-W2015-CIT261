@@ -7,7 +7,7 @@
         <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src="general.js"></script>
     </head>
-    <body onload="doShowAll()">
+    <body onload="doShowAll(); loadColor()">
         <div id='wrapper'>
         <header class="themecolor" id="header">
             <a href="index.php" id="home" class="button">Home</a>

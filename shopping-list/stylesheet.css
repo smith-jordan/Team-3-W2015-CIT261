@@ -249,6 +249,7 @@ footer #delete {
   }
 }
 
+/*------Animation-------*/
 @keyframes rubberBand {
   0% {
     -webkit-transform: scale3d(1, 1, 1);

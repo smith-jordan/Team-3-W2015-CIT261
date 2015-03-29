@@ -112,8 +112,8 @@ function changeColor(color){
             };
             
 function loadColor(){
-    var maincolor = document.getElementById("result").innerHTML = localStorage.getItem("maincolor");
-    var seccolor = document.getElementById("result").innerHTML = localStorage.getItem("seccolor");
+    var maincolor = localStorage.getItem("maincolor");
+    var seccolor =  localStorage.getItem("seccolor");
     $( ".themecolor" ).css({"background-color":maincolor});
     $( ".button" ).css({"background-color":seccolor});
 }
