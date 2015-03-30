@@ -59,6 +59,17 @@ function doRemoveItem() {
     doShowAll();
 }
 
+function doRemoveChecked() {
+    items = JSON.parse(localStorage.items); 
+    for (var i=items.length-1; i>=0; i--) {
+        if (items[i].checkbox === "true"){
+            items.splice(i,1);
+        }
+    }
+    localStorage.setItem('items',JSON.stringify(items));
+    doShowAll();
+}
+
 function doClear() {
     items = JSON.parse(localStorage.items);
     items = [];
@@ -137,9 +148,9 @@ function changeCheck(el){
 /*options functions*/
 function sortImp(){
     items = JSON.parse(localStorage.items);
-    for (i=0; i<=items.length-1; i++) {
-        if (items[i].star === "true") {
-            items.splice(0, 0, items.splice(i, 1)[0]);
+    for (var i=items.length-1; i>=0; i--) {
+        if (items[i].star === "false") {
+            items.splice(items.length-1, 0, items.splice(i, 1)[0]);
         }
     }
     localStorage.setItem('items',JSON.stringify(items));

@@ -119,13 +119,16 @@ main{
     float:left;
 }
 #clearbutt {
-    clear:both;
+    float:left;
     width:100px;
+    margin:5px;
 }
 #dltbutt {
     clear:both;
     width:100px;
+    margin:5px;
 }
+
 
 /*Options menu*/
 #divoptions {
