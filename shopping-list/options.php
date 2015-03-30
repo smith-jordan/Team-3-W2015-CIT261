@@ -1,4 +1,5 @@
-<script> 
+<script>
+    loadColor();
 </script>
 <div id="divoptions" class="themecolor" onload="loadColor()">
 <a href="" class="close button">Close</a>

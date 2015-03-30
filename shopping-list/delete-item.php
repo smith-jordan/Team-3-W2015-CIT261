@@ -1,4 +1,6 @@
-
+<script>
+    loadColor();
+</script>
 <div id="dltitemdiv" class="themecolor" onload="loadColor()">
     <form name=editor>
         <a href="" class="close button">Close</a>
