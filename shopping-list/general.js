@@ -121,8 +121,8 @@ function changeImportance(el){
 function sortImp(){
     items = JSON.parse(localStorage.items);
     for (i=0; i<=items.length-1; i++) {
-        if (items[i].star === "false") {
-            items.splice(items.length-1, 0, items.splice(i, 1)[0]);
+        if (items[i].star === "true") {
+            items.splice(0, 0, items.splice(i, 1)[0]);
         }
     }
     localStorage.setItem('items',JSON.stringify(items));
