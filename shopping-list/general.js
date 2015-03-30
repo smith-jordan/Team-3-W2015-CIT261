@@ -83,10 +83,10 @@ function doShowAll() {
             
             /*load checked or unchecked box based on object checkbox value*/
             if (items[i].checkbox === "false"){
-                pairs += "<td><input type='checkbox' onchange='changeCheck(this)' id="+items[i].name+"></td></tr>";
+                pairs += "<td><input type='checkbox' class='unchecked' onchange='changeCheck(this)' id="+items[i].name+"></td></tr>";
             }
             else {
-                pairs += "<td><input type='checkbox' onchange='changeCheck(this)' id="+items[i].name+" checked><td></tr>";
+                pairs += "<td><input type='checkbox' class='checked' onchange='changeCheck(this)' id="+items[i].name+" checked><td></tr>";
             }
     }
     /*if items array is empty*/
@@ -108,7 +108,7 @@ function changeImportance(el){
             el.setAttribute("src", "http://dastrupdevelopment.com/imp2.png");
         }
         /*change important to not important*/
-        if (itemName === items[i].name && itemClass === "imp"){
+        else if (itemName === items[i].name && itemClass === "imp"){
             items[i].star = "false"; 
             el.setAttribute("class","notimp");
             el.setAttribute("src", "http://dastrupdevelopment.com/imp1.png");
@@ -119,17 +119,19 @@ function changeImportance(el){
 function changeCheck(el){
     items = JSON.parse(localStorage.items);
     var itemName = $(el).attr('id');
+    var checkStatus = $(el).attr('class');
     for (i=0; i<=items.length-1; i++) {
         /*change not check to check*/
-        if (itemName === items[i].name &&  items[i].checkbox === "false"){
+        if (itemName === items[i].name && checkStatus === "unchecked"){
             items[i].checkbox = "true";
         }
         /*change important to not important*/
-        if (itemName === items[i].name && items[i].checkbox === "true"){
+        else if (itemName === items[i].name && checkStatus === "checked"){
             items[i].checkbox = "false"; 
         }
     }
     localStorage.setItem('items',JSON.stringify(items));
+    doShowAll();
 }  
 
 /*options functions*/
