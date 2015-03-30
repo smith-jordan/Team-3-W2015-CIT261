@@ -125,7 +125,7 @@ function changeCheck(el){
         if (itemName === items[i].name && checkStatus === "unchecked"){
             items[i].checkbox = "true";
         }
-        /*change important to not important*/
+        /*change check to not check*/
         else if (itemName === items[i].name && checkStatus === "checked"){
             items[i].checkbox = "false"; 
         }
