@@ -7,7 +7,7 @@
 <h3>Sort Items By:</h3>
     <ul id="optsort">
         <li>Order entered</li>
-        <li>Importance</li>
+        <li><a href="" onclick='sortImp()'>Importance</a></li>
         <li>Alphabetical</li>
     </ul>
 
