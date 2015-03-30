@@ -126,7 +126,7 @@ function changeCheck(el){
         }
         /*change important to not important*/
         if (itemName === items[i].name && items[i].checkbox === "true"){
-            items[i].star = "false"; 
+            items[i].checkbox = "false"; 
         }
     }
     localStorage.setItem('items',JSON.stringify(items));
