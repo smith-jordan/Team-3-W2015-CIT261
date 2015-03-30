@@ -6,7 +6,7 @@
 <h2>Options</h2>
 <h3>Sort Items By:</h3>
     <ul id="optsort">
-        <li>Order entered</li>
+        <li><a href="" onclick='sortCheck()'>Checked</a></li>
         <li><a href="" onclick='sortImp()'>Importance</a></li>
         <li>Alphabetical</li>
     </ul>

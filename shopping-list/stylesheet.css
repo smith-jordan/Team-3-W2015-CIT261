@@ -60,6 +60,10 @@ header h1 {
 main{
     margin-top:50px;
 }
+.imp, .notimp {
+    height:18px;
+    width:18px;
+}
 
 /*popup menus*/
 .popup h2 {
@@ -115,6 +119,10 @@ main{
     float:left;
 }
 #clearbutt {
+    clear:both;
+    width:100px;
+}
+#dltbutt {
     clear:both;
     width:100px;
 }

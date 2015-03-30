@@ -83,10 +83,10 @@ function doShowAll() {
             
             /*load checked or unchecked box based on object checkbox value*/
             if (items[i].checkbox === "false"){
-                pairs += "<td><input type='checkbox' id="+items[i].name+"></td></tr>";
+                pairs += "<td><input type='checkbox' onchange='changeCheck(this)' id="+items[i].name+"></td></tr>";
             }
             else {
-                pairs += "<td><input type='checkbox' id="+items[i].name+" checked><td></tr>";
+                pairs += "<td><input type='checkbox' onchange='changeCheck(this)' id="+items[i].name+" checked><td></tr>";
             }
     }
     /*if items array is empty*/
@@ -116,6 +116,21 @@ function changeImportance(el){
     }
     localStorage.setItem('items',JSON.stringify(items));
 }  
+function changeCheck(el){
+    items = JSON.parse(localStorage.items);
+    var itemName = $(el).attr('id');
+    for (i=0; i<=items.length-1; i++) {
+        /*change not check to check*/
+        if (itemName === items[i].name &&  items[i].checkbox === "false"){
+            items[i].checkbox = "true";
+        }
+        /*change important to not important*/
+        if (itemName === items[i].name && items[i].checkbox === "true"){
+            items[i].star = "false"; 
+        }
+    }
+    localStorage.setItem('items',JSON.stringify(items));
+}  
 
 /*options functions*/
 function sortImp(){
@@ -129,6 +144,19 @@ function sortImp(){
     
     /*update visible table*/
     doShowAll();
+}
+function sortCheck(){
+    items = JSON.parse(localStorage.items);
+    for (i=0; i<=items.length-1; i++) {
+        if (items[i].checkbox === "false") {
+            items.splice(0, 0, items.splice(i, 1)[0]);
+        }
+    }
+    localStorage.setItem('items',JSON.stringify(items));
+    
+    /*update visible table*/
+    doShowAll();
+    
 }
 
 function changeColor(color){
