@@ -22,9 +22,9 @@
         <footer class="themecolor">
             <nav>
                 <ul>
-                    <li id="add"><a href="add-item" class="button">Add</a></li>
-                    <li id="options"><a href="options" class="button">Options</a></li>
-                    <li id="delete"><a href="delete-item" class="button">Delete</a></li>
+                    <li id="add"><a href="javascript:void(0)" class="button" onclick="loadXMLDoc('add-item.txt')">Add</a></li>
+                    <li id="options"><a href="javascript:void(0)" class="button" onclick="loadXMLDoc('options.txt')">Options</a></li>
+                    <li id="delete"><a href="javascript:void(0)" class="button" onclick="loadXMLDoc('delete-item.txt')">Delete</a></li>
                 </ul>
             </nav>
         </footer>
