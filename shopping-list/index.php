@@ -15,7 +15,7 @@
         </header>
         <main>
             <table id="items_table"></table>
-            <div class="popup">
+            <div class="popup" id="popup">
                 
             </div>
         </main>
