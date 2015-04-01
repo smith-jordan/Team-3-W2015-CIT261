@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Shopping List</title>
-        <link href="stylesheet.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheet.css" rel="stylesheet" type="text/css" media="screen" />
         
         <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src="general.js"></script>
