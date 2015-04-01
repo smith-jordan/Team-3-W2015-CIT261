@@ -309,3 +309,13 @@ footer #delete {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+@media screen and (max-width: 720px) {
+
+table { 
+margin: auto;
+font-size:18pt;
+text-align:center;}
+
+
+
+}
