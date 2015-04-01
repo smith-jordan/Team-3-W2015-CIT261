@@ -1,5 +1,6 @@
 /*AJAX Pages*/
-$(document).ready(function(){
+/*Instead of deleting I commented this out in case the new code doesn't work*-Kami/
+/* $(document).ready(function(){
     
     $('.popup').load('empty.php');
     
@@ -13,8 +14,31 @@ $(document).ready(function(){
         return false;
     });
     
-});
+});*/
 
+
+function loadXMLDoc(url){
+    var xmlhttp;
+    if (window.XMLHttpRequest)
+    {
+        xmlhttp = new XMLHttpRequest();
+    }
+    else
+    {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+        xmlhttp.onreadystatechange = function()
+    {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+        {
+            document.getElementById("popup").innerHTML = xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+}
+            
+            
 /*add, remove, clear, show functions*/
 var items = [];
 
