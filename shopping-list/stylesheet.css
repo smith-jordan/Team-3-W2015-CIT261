@@ -309,7 +309,8 @@ footer #delete {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-@media screen and (max-width: 720px) {
+@media only screen and (max-device-width: 720px) and (orientation: portrait),
+only screen and (max-device-width: 1024px) and (orientation: landscape) {
 
 table { 
 margin: auto;
