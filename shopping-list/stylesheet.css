@@ -314,9 +314,37 @@ only screen and (max-device-width: 1024px) and (orientation: landscape) {
 
 table { 
 margin: auto;
-font-size:18pt;
-text-align:center;}
+font-size:4em;
+text-align:center;
+}
 
+/*Header*/
+header {
+    position:fixed;
+    top:0px;
+    height:200px;
+    width:100%;
+    font-size:3em;
+}
+header h1 {
+    text-align: center;
+    margin-top:50px;
+}
+#home {
+    position:fixed;
+    top:50px;
+    left:5px;
+    z-index:1;
+    width:50px;
+}
 
+/*Main content*/
+main{
+    margin-top:200px;
+}
+.imp, .notimp {
+    height:18px;
+    width:18px;
+}
 
 }
