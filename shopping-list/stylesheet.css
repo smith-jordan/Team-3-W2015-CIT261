@@ -309,6 +309,12 @@ footer #delete {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
+
+
+
+
+
 @media only screen and (max-device-width: 720px) and (orientation: portrait),
 only screen and (max-device-width: 1024px) and (orientation: landscape) {
 
@@ -316,6 +322,7 @@ table {
 margin: auto;
 font-size:4em;
 text-align:center;
+padding-top: 10px;
 }
 
 /*Header*/
@@ -337,14 +344,211 @@ header h1 {
     z-index:1;
     width:50px;
 }
-
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(4); /* IE */
+  -moz-transform: scale(4); /* FF */
+  -webkit-transform: scale(4); /* Safari and Chrome */
+  -o-transform: scale(4); /* Opera */
+  
+}
 /*Main content*/
 main{
-    margin-top:200px;
+    margin-top:100px;
 }
-.imp, .notimp {
-    height:18px;
-    width:18px;
+img {
+   -ms-transform: scale(4); /* IE */
+  -moz-transform: scale(4); /* FF */
+  -webkit-transform: scale(4); /* Safari and Chrome */
+  -o-transform: scale(4); /* Opera */
+  padding: 15px;
+}
+/*popup menus*/
+.popup h2 {
+    font-size:2em;
+    padding:5px;
+}
+.popup h3 {
+    font-size: 2em;
+    padding:3px;
+}
+.popup ul {
+    padding:0px;
+    margin:0px;
+}
+.close {
+    position:absolute;
+    top:2px;
+    right:2px;
+    z-index:1;
+    width:25px;
+    font-size:1.5em;
+}
+
+/*Add item menu*/
+#additemdiv {
+    height:120px;
+    width:100%;
+    position:fixed;
+    bottom:120px;
+    background-color:#000000;
+    color:#ffffff;
+}
+#additemdiv #quantity {
+    float:left;
+}
+#additemdiv a.button {
+    float:left;
+}
+
+/*delete item menu*/
+#dltitemdiv {
+   height:120px;
+    width:100%;
+    position:fixed;
+    bottom:120px;
+    background-color:#000000;
+    color:#ffffff; 
+}
+#dltitem {
+    float:left;
+}
+#dltitemdiv a.button {
+    float:left;
+}
+#clearbutt {
+    float:left;
+    width:100px;
+    margin:5px;
+}
+#dltbutt {
+    clear:both;
+    width:100px;
+    margin:5px;
+}
+
+
+/*Options menu*/
+#divoptions {
+    height:240px;
+    width:100%;
+    position:fixed;
+    bottom:120px;
+    background-color:#000000;
+    color:#ffffff;
+}
+#divoptions ul {
+    margin-left:20px;
+    margin-bottom:10px;
+}
+#optcolors{
+    list-style-type:none;
+}
+#optcolors li{
+    float:left;
+    margin:2px;
+}
+.optcolors {
+    display:block;
+    height:20px;
+    width:20px;
+    
+}
+#pink{
+    background-color:pink;
+    border: 1px solid white
+}
+#red {
+    background-color:red;
+    border: 1px solid white
+}
+#orange {
+    background-color:orange;
+    border: 1px solid white
+}
+#yellow {
+    background-color:yellow;
+    border: 1px solid white
+}
+#green {
+    background-color:green;
+    border: 1px solid white
+}
+#blue {
+    background-color:blue;
+    border: 1px solid white
+}
+#purple {
+    background-color: purple;
+    border: 1px solid white
+}
+#black {
+    background-color:black;
+    border: 1px solid white
+}
+/*footer navigation*/
+footer {
+   color:#ffffff;
+   background-color:#000000; 
+   position:fixed;
+   bottom:0px;
+   height:120px;
+   width:100%;
+}
+footer ul {
+    list-style-type: none;
+    margin:0px;
+    padding:5px;
+    width:100%;
+}
+footer li{
+    width:56px;
+    padding:5px;
+    text-align:center;
+}
+footer #add {
+    float:left;
+}
+footer #options{
+    float:left;
+    position:absolute;
+    left:50%;
+    margin-left:-33px;
+}
+footer #delete {
+    float:left;
+    position:absolute;
+    right:5px;
+}
+
+
+.button {
+   
+    display: block;
+    padding:5px;
+    font-size:1em;
+    width:150px;
+    height: 75px;
+    font-family:'Alegreya Sans', Arial, sans-serif;
+    text-decoration: none;
+    color:#ffffff;
+    text-align:center;
+    background-color:#232323;
+    /*Gradient*/
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.2));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.2));
+}
+.button:active {
+  /*Gradient*/
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.4));
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.4));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.4));
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.4));
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(60, 0, 60, 0.4));
 }
 
 }
