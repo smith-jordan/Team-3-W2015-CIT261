@@ -10,7 +10,6 @@
     <body onload="doShowAll(); loadColor()">
         <div id='wrapper'>
         <header class="themecolor" id="header">
-            <a href="index.php" id="home" class="button">Home</a>
             <h1 class="animated rubberBand">Shopping List</h1>
         </header>
         <main>

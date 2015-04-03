@@ -8,7 +8,6 @@
     <ul id="optsort">
         <li><a href="" onclick='sortCheck()'>Checked</a></li>
         <li><a href="" onclick='sortImp()'>Importance</a></li>
-        <li>Alphabetical</li>
     </ul>
 
 <h3>Theme color:</h3>
